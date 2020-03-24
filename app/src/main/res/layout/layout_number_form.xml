@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="45dp"
+    android:paddingEnd="45dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/outputViewGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/amountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textAppearance="@style/Title2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="RM 15.00" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/borderGrey"
+        app:layout_constraintBottom_toTopOf="@id/outputViewGroup" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/borderGrey"
+        app:layout_constraintTop_toBottomOf="@id/outputViewGroup" />
+
+    <!-- First Row -->
+
+    <Button
+        android:id="@+id/oneTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp"
+        android:text="1"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/twoTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outputViewGroup" />
+
+    <Button
+        android:id="@+id/twoTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp"
+        android:text="2"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/threeTextView"
+        app:layout_constraintStart_toEndOf="@+id/oneTextView"
+        app:layout_constraintTop_toBottomOf="@+id/outputViewGroup" />
+
+    <Button
+        android:id="@+id/threeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp"
+        android:text="3"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/twoTextView"
+        app:layout_constraintTop_toBottomOf="@+id/outputViewGroup" />
+
+    <!-- Second Row -->
+
+    <Button
+        android:id="@+id/fourTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp"
+        android:text="4"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/fiveTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/oneTextView" />
+
+    <Button
+        android:id="@+id/fiveTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp"
+        android:text="5"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/sixTextView"
+        app:layout_constraintStart_toEndOf="@+id/fourTextView"
+        app:layout_constraintTop_toBottomOf="@id/twoTextView" />
+
+    <Button
+        android:id="@+id/sixTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp"
+        android:text="6"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fiveTextView"
+        app:layout_constraintTop_toBottomOf="@id/threeTextView" />
+
+    <!-- Third Row -->
+
+    <Button
+        android:id="@+id/sevenTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp"
+        android:text="7"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/eightTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourTextView" />
+
+    <Button
+        android:id="@+id/eightTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp"
+        android:text="8"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/nineTextView"
+        app:layout_constraintStart_toEndOf="@+id/sevenTextView"
+        app:layout_constraintTop_toBottomOf="@+id/fiveTextView" />
+
+    <Button
+        android:id="@+id/nineTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp"
+        android:text="9"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eightTextView"
+        app:layout_constraintTop_toBottomOf="@+id/sixTextView" />
+
+    <!-- Fourth Row -->
+    <ImageButton
+        android:id="@+id/backspaceButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp"
+        android:src="@drawable/ic_backspace"
+        android:textAlignment="center"
+        android:tint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/zeroTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sevenTextView" />
+
+    <Button
+        android:id="@+id/zeroTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/submitImageView"
+        app:layout_constraintStart_toEndOf="@+id/backspaceButton"
+        app:layout_constraintTop_toBottomOf="@id/eightTextView" />
+
+    <ImageButton
+        android:id="@+id/submitImageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp"
+        android:src="@drawable/ic_done_circle"
+        android:textAlignment="center"
+        android:tint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/zeroTextView"
+        app:layout_constraintTop_toBottomOf="@id/nineTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,4 +3,25 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="colorAccentDark">#0BA697</color>
+
+    <color name="colorBlack1">#FF09161E</color>
+    <color name="colorBlack2">#9909161E</color>
+    <color name="colorBlack3">#6609161E</color>
+
+    <color name="colorBlue">#2196F3</color>
+    <color name="colorGreen">#4CAF50</color>
+    <color name="colorPurple">#9C27B0</color>
+    <color name="colorOrange">#FF5722</color>
+    
+    <color name="colorWhite1">#FFFFFFFF</color>
+    <color name="colorWhite2">#99FFFFFF</color>
+    <color name="colorWhite3">#66FFFFFF</color>
+
+    <color name="colorInactive">#C09E9E9E</color>
+    <color name="colorInactiveHint">#40000000</color>
+
+    <color name="colorGrey">#C09E9E9E</color>
+    <color name="borderGrey">#409E9E9E</color>
+    <color name="cellGrey">#40000000</color>
 </resources>
