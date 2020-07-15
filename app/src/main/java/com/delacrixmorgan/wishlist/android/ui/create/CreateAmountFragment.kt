@@ -30,6 +30,9 @@ class CreateAmountFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // TODO Rollover Description Text
+        //Would you want to roll any unspent money over to the next month budget.
+
         amountEditText.doAfterTextChanged {
             val money = Money(it.toString().toDouble())
             listener.onBudgetAmountSelected(money)

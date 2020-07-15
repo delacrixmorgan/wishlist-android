@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp"
-            android:text="How much money would set for this budget.\n\nWould you want to roll any unspent money over to the next month budget."
+            android:text="How much money would set for this budget."
             android:textAlignment="center"
             android:textAppearance="@style/Subhead"
             android:textColor="@color/colorGrey" />
